@@ -10,6 +10,7 @@ import article4 from '../../public/images/articles/pagination component in react
 import Link from 'next/link'
 import Image from 'next/image';
 import { motion, useMotionValue } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect'
 
 export const MovingImage=({title,image,link})=>{
     const x=useMotionValue(0);
@@ -95,6 +96,7 @@ const articles = () => {
         <title>Code | articles Page</title>
         <meta name="desription" content="any description"></meta>
     </Head>
+    <TransitionEffect/>
     <main className='w-full flex flex-col items-center justify-center p-12'>
         <Layout className='pt-16'>
             <AnimatedText text="Words Can Change The World!  "

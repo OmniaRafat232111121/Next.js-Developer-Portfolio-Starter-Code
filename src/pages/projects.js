@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import TransitionEffect from '@/components/TransitionEffect'
 export const FeatureProject=({type,title,image,summary,link,github})=>{
     return(
        <article className='lg:w-[80%]  md:w-[60%] sm:w-[30%]  w-full  flex-row xl:flex-col 
@@ -77,6 +78,7 @@ const projects = () => {
             <title>Code | project Page</title>
             <meta name="desription" content="any description"></meta>
         </Head>
+        <TransitionEffect/>
         <main className='w-full flex flex-col  items-center justify-center  px-12 '>
             <Layout className='pt-16'>
                 <AnimatedText text="Imagination Trumps Knowledge! " 
